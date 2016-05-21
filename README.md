@@ -14,9 +14,14 @@
 ##### 3. 安装[JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 下载安装后，在系统环境变量中新建`JAVA_HOME`变量，地址指向JDK的`bin`目录。
 ##### 4. 安装[Apache Ant](http://ant.apache.org/bindownload.cgi)
-
+下载解压到固定目录下，在系统环境变量中新建`ANT_HOME`变量，地址指向刚才解压的目录，在`PATH`变量下，添加`%ANT_HOME%\bin`，启动`cmd`输入`ant`，提示
+```
+Buildfile: build.xml does not exist!
+Build failed
+```
+则表示Ant配置正确
 ##### 5. 安装[Apache Maven](http://maven.apache.org/download.cgi)
-
+下载解压到固定目录下，在系统环境变量中新建`M2HOME`变量，地址指向刚才解压的目录，新建`M2`变量，地址为`%M2HOME%\bin`，在`PATH`变量下，添加`%M2%`，启动`cmd`输入`mvn -v`，会显示Maven的版本，则表示Maven配置正确
 ##### 6. 安装[Android Studio](https://developer.android.com/studio/index.html)
 安装后运行一次，会自动下载更新相应的Android SDK，等待更新完成后，在系统环境变量中新建`ANDROID_HOME`变量，地址指向SDK的目录，添加`tools`和`platform-tools`两个目录到`PATH`变量下。
 ##### 7. 检测Appium依赖
