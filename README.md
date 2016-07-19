@@ -30,6 +30,10 @@ Build failed
 下载安装即可。
 ##### 9. 安装[Python3](https://www.python.org/downloads/windows/)
 根据操作系统选择32或64位安装包，安装完成后，打开`cmd`，输入`pip install Appium-Python-Client`，安装Appium的Python客户端
+##### 10. 备注&疑难问题
+目前在Windows平台上，最新的安装包版本是1.4.16，这个版本是15年编译的，而Appium在不停的修复bug，因此使用安装包安装的Appium不包含最新的修复bug。所以推荐使用`npm install -g appium`来安装最新的命令行版本的Appium，并且当版本更新时，可以随之升级，比较方便。
+但是使用npm安装需要翻墙，因为在npm下载完成后，安装过程中，还是会从github上下载一些文件，比如appium-selendroid-driver会在安装中下载selendroid-server.jar，如果不翻墙则会下载失败导致不能正确安装
+
 
 ## 启动Appium
 
