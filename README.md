@@ -33,31 +33,3 @@ Build failed
 ##### 10. 备注&疑难问题
 目前在Windows平台上，最新的安装包版本是1.4.16，这个版本是15年编译的，而Appium在不停的修复bug，因此使用安装包安装的Appium不包含最新的修复bug。所以推荐使用`npm install -g appium`来安装最新的命令行版本的Appium，并且当版本更新时，可以随之升级，比较方便。
 但是使用npm安装需要翻墙，因为在npm下载完成后，安装过程中，还是会从github上下载一些文件，比如appium-selendroid-driver会在安装中下载selendroid-server.jar，如果不翻墙则会下载失败导致不能正确安装
-
-
-## 启动Appium
-
-## 初始脚本
-
-##### 参考Appium-Python范例
-根据Appium的官方文档，Python需要在调用Appium前，传入一个dict，范例如下：
-```
-from appium import webdriver 
-
-dc = {
-    'platformName':Android',
-    'platformVersion':'5.1',
-    'deviceName':'i60a',
-    'appPackage':'me.haima.androidassist',
-    'appActivity':'me.haima.androidassist.mainActivity'
-}
-
-wbdriver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',dc)
-```
-运行以上代码，即可在真机上运行海马玩商店
-
-##### 第一个脚本－下载一个软件／游戏
-步骤分解：
-* 启动商店
-* 寻找下载按钮
-* 点击
