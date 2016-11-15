@@ -3,7 +3,7 @@
 ##### 在Windows上进行Android自动化
 
 [Appium](https://github.com/appium/appium)
-支持对IOS和Android进行自动化测试，而且可以部署在Windows和Mac OS X机器上。他使用Server-Client架构，能够支持Python Java ruby等多种语言来编写自动化脚本。本次范例，在Windows上使用Python进行Android的自动化测试，测试的程序是公司的安卓商店。
+支持对IOS和Android进行自动化测试，而且可以部署在Windows(仅支持Android)和Mac OS X机器上。他使用Server-Client架构，能够支持Python Java ruby等多种语言来编写自动化脚本。本文详细记录配置Appium环境的方法。
 
 ## 在Windows上安装部署
 
